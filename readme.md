@@ -1,15 +1,4 @@
 # Admin-Dash For Laravel 5.4
-
-Admin-Dash is a start-up template implementing the [Admin LTE](https://almsaeedstudio.com/themes/AdminLTE/index2.html) admin panel into a Laravel 5.4 project.  The starter application is based on the sample application built in [Laravel 5.4 For Beginners](https://leanpub.com/laravel-5-4-for-beginners) by Bill Keck.
-
-![](admin-dash.png)
-
-
-
-In addition to the Admin LTE implementation, Admin-Dash also includes Facebook and Github integration through Socialite.  Working datagrids, with pagination, column sorts and search, using Vue.js and various other features found in the [book](https://leanpub.com/laravel-5-4-for-beginners).
-
-If you would like to help support the development of Admin-Dash, there is no donation button, however, contributions can be made by [purchasing the book](https://leanpub.com/laravel-5-4-for-beginners).
-
 ## Installation
 
 Follow [the basic instructions](https://help.github.com/articles/fork-a-repo/) for forking a repo from Github.
@@ -122,8 +111,7 @@ To navigate to the admin dashboard, create a user and change their is_admin valu
 
 On the admin panel, check the site pages link for additional pages with working data grids, written in Vue.js.
 
-To use this application, you need a working knowledge of the Laravel framework, with composer installed.  If you are unfamiliar with Laravel, see the [docs](https://laravel.com/docs/5.4).  For those just getting started, check out [Laravel 5.4 For Beginners](https://leanpub.com/laravel-5-4-for-beginners).
-
+To use this application, you need a working knowledge of the Laravel framework, with composer installed.  If you are unfamiliar with Laravel, see the [docs](https://laravel.com/docs/5.4).
 ## License
 
 Admin-Dash is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).

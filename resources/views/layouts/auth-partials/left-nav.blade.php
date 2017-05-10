@@ -43,9 +43,6 @@
             <li><a href="/create-order"><i class="fa fa-dashboard"></i><span>Manage orders/trades</span></a></li>
             <li><a href="/determine-profile-route"><i class="fa fa-user"></i> <span>Profile</span></a></li>
             <li><a href="/settings"><i class="fa fa-wrench"></i> <span>Account Settings</span></a></li>
-            <li class="treeview">
-                <a href="#"><i class="fa fa-archive"></i> <span>Content</span> <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
-            </li>
         </ul>
         <!-- /.sidebar-menu -->
     </section>
