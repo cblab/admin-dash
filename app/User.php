@@ -98,4 +98,10 @@ class User extends Authenticatable
         return $this->hasMany(Message::class);
 
     }
+
+    public function exchangeStocks()
+    {
+        return $this->hasMany('App\Model\ExchangeStock');
+    }
+
 }

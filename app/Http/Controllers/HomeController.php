@@ -10,6 +10,8 @@ use App\Exceptions\EmailNotProvidedException;
 use App\Exceptions\NoActiveAccountException;
 use App\Exceptions\TransactionFailedException;
 use App\Exceptions\UnauthorizedException;
+use App\Queries\GridQueries\HighestSharePricePerExchangeQuery;
+use App\Queries\GridQueries\UserStockQuery;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -31,9 +33,20 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $user_stock_query = new UserStockQuery();
+        $common_stocks_group = $user_stock_query->filterByStockType('common_stock');
+        $prefered_stocks_group = $user_stock_query->filterByStockType('prefered_stock');
 
-        return view('pages.home');
+        return view('pages.home')
+            ->with('common_stocks_group', $common_stocks_group)
+            ->with('prefered_stocks_group', $prefered_stocks_group);
+    }
 
+    public function highestMarketPrices() {
+        $highest_trade_values_per_exchange = (new HighestSharePricePerExchangeQuery())->fetch();
+
+        return view('pages.highest-market-prices')
+            ->with('highest_trade_values_per_exchange', $highest_trade_values_per_exchange);
     }
 
 }

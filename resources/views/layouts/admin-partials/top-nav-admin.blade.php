@@ -10,7 +10,7 @@
 
         <!-- logo for regular state and mobile devices -->
 
-        <span class="logo-lg"><b>Admin</b> DASH</span>
+        <span class="logo-lg"><b>Investor Dash</b></span>
     </a>
 
     <!-- Header Navbar: style can be found in header.less -->

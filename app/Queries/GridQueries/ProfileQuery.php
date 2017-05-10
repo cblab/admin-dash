@@ -5,8 +5,9 @@ namespace App\Queries\GridQueries;
 use DB;
 
 use App\Queries\GridQueries\Contracts\DataQuery;
+use App\Queries\GridQueries\Contracts\FilteredDataQuery;
 
-class ProfileQuery implements DataQuery
+class ProfileQuery implements DataQuery, FilteredDataQuery
 {
 
     public function data($column, $direction)

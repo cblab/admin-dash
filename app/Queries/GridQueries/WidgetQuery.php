@@ -1,11 +1,11 @@
 <?php
-
 namespace App\Queries\GridQueries;
 
 use DB;
 use App\Queries\GridQueries\Contracts\DataQuery;
+use App\Queries\GridQueries\Contracts\FilteredDataQuery;
 
-class WidgetQuery implements DataQuery
+class WidgetQuery implements DataQuery, FilteredDataQuery
 {
     public function data($column, $direction)
     {
@@ -18,7 +18,6 @@ class WidgetQuery implements DataQuery
               ->paginate(10);
 
         return $rows;
-
     }
 
     public function filteredData($column, $direction, $keyword)
@@ -33,6 +32,5 @@ class WidgetQuery implements DataQuery
               ->paginate(10);
 
         return $rows;
-
     }
 }

@@ -43,9 +43,7 @@ class ProfileController extends Controller
         $profileExists = $this->profileExists();
 
         if ($profileExists){
-
             return Redirect::route('show-profile');
-
         }
 
         return view('profile.create');

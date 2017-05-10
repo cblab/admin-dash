@@ -3,15 +3,14 @@
 namespace App\Queries\GridQueries;
 
 use DB;
-
 use App\Queries\GridQueries\Contracts\DataQuery;
+use App\Queries\GridQueries\Contracts\FilteredDataQuery;
 
-class MarketingImageQuery implements DataQuery
+class MarketingImageQuery implements DataQuery, FilteredDataQuery
 {
 
     public function data($column, $direction)
     {
-
         $rows = DB::table('marketing_images')
                 ->select('id as Id',
                          'image_name as Name',

@@ -42,7 +42,7 @@
 
                     <div class="login-logo">
 
-                        <a href="/"><b>Admin</b>DASH</a>
+                        <a href="/"><b>Investor Dash</b></a>
 
                     </div>
 

@@ -36,20 +36,15 @@
             <li><a href="/admin"><i class="fa fa-dashboard"></i>
                      <span>Admin</span></a></li>
             @endif
-            <li><a href="/home"><i class="fa fa-dashboard"></i>
-                    <span>User Dash</span></a></li>
+            <li><a href="/home"><i class="fa fa-dashboard"></i><span>Company Stock Overview</span></a></li>
+            <li><a href="/highest-market-prices"><i class="fa fa-dashboard"></i><span>Highest Market Prices</span></a></li>
+            <li><a href="/create-company"><i class="fa fa-dashboard"></i><span>Create Company Profile</span></a></li>
+            <li><a href="/create-stock"><i class="fa fa-dashboard"></i><span>Add Company Stock</span></a></li>
+            <li><a href="/create-order"><i class="fa fa-dashboard"></i><span>Manage orders/trades</span></a></li>
             <li><a href="/determine-profile-route"><i class="fa fa-user"></i> <span>Profile</span></a></li>
             <li><a href="/settings"><i class="fa fa-wrench"></i> <span>Account Settings</span></a></li>
             <li class="treeview">
-                <a href="#"><i class="fa fa-archive"></i> <span>Content</span>
-                    <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="#">Link in level 2</a></li>
-                    <li><a href="#">Link in level 2</a></li>
-                </ul>
+                <a href="#"><i class="fa fa-archive"></i> <span>Content</span> <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
             </li>
         </ul>
         <!-- /.sidebar-menu -->

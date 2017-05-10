@@ -2,7 +2,7 @@
 <div class="navbar navbar-fixed-bottom">
 
 <div class="guest-footer">
-        <strong>Copyright &copy; 2017 <a href="/">Admin DASH</a>.</strong> All rights
+        <strong>Copyright &copy; 2017 <a href="/">Investor Inc.</a>.</strong> All rights
         reserved.
 
         <div class="pull-right">

@@ -19,14 +19,98 @@ Route::get('/', 'PagesController@index')->name('index');
 // Home page authenticated
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/highest-market-prices', 'HomeController@highestMarketPrices')->name('highest.market.prices');
+
+/* --------------------- Reports --------------------- */
+Route::get('/create-company-profile', 'HomeController@createCompanyProfile')->name('highest.market.prices');
+Route::get('/add-company-stock', 'HomeController@addCompanyStock')->name('highest.market.prices');
+
+/* --------------------- Companies --------------------- */
+Route::get('/create-company', [
+    'middleware' => 'auth',
+    'uses'       => 'CompanyController@index',
+    'as'         => 'company.index'
+]);
+
+Route::post('/company/create/', [
+    'middleware' => 'auth',
+    'uses'       => 'CompanyController@create',
+    'as'         => 'company.create'
+]);
+
+Route::get('/company/created/', [
+    'middleware' => 'auth',
+    'uses'       => 'CompanyController@created',
+    'as'         => 'company.created'
+]);
+
+Route::put('/company/update/', [
+    'middleware' => 'auth',
+    'uses'       => 'CompanyController@update',
+    'as'         => 'company.update'
+]);
+
+Route::delete('/company/delete/{id}', [
+    'middleware' => 'auth',
+    'uses'       => 'CompanyController@destroy',
+    'as'         => 'company.delete'
+]);
+
+/* --------------------- Stock --------------------- */
+Route::get('/create-stock', [
+    'middleware' => 'auth',
+    'uses'       => 'StockController@index',
+    'as'         => 'stock.index'
+]);
+
+Route::post('/stock/create/', [
+    'middleware' => 'auth',
+    'uses'       => 'StockController@create',
+    'as'         => 'stock.create'
+]);
+
+Route::put('/stock/update/', [
+    'middleware' => 'auth',
+    'uses'       => 'StockController@update',
+    'as'         => 'stock.update'
+]);
+
+Route::delete('/stock/delete/{id}', [
+    'middleware' => 'auth',
+    'uses'       => 'StockController@destroy',
+    'as'         => 'stock.delete'
+]);
+
+/* --------------------- Order --------------------- */
+Route::get('/create-order', [
+    'middleware' => 'auth',
+    'uses'       => 'OrderController@index',
+    'as'         => 'order.index'
+]);
+
+Route::post('/order/create/', [
+    'middleware' => 'auth',
+    'uses'       => 'OrderController@create',
+    'as'         => 'order.create'
+]);
+
+Route::put('/order/update/', [
+    'middleware' => 'auth',
+    'uses'       => 'OrderController@update',
+    'as'         => 'order.update'
+]);
+
+Route::delete('/order/delete/{id}', [
+    'middleware' => 'auth',
+    'uses'       => 'OrderController@destroy',
+    'as'         => 'order.delete'
+]);
 
 // Admin route
-
 Route::get('/admin', 'AdminController@index')->name('admin');
 Route::get('/admin-v2', 'AdminController@adminV2');
 
 // Api Routes
-
 Route::get('api/category-data', 'ApiController@categoryData');
 Route::get('api/lesson-data', 'ApiController@lessonData');
 Route::get('api/marketing-image-data', 'ApiController@marketingImageData');
@@ -37,70 +121,52 @@ Route::get('api/widget-data', 'ApiController@widgetData');
 
 
 // Authentication routes
-
 Route::get('login', 'Auth\AuthController@showLoginForm')->name('login');
 Route::post('login', 'Auth\AuthController@login');
 Route::post('logout', 'Auth\AuthController@logout')->name('logout');
 
 // MarketingImages routes
-
 Route::resource('marketing-image', 'MarketingImageController');
 
 // Password Reset Routes...
-
 Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
 Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail');
 Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
 // Privacy route
-
 Route::get('privacy', 'PagesController@privacy');
 
 // Profile
-
 Route::get('show-profile', 'ProfileController@showProfileToUser')->name('show-profile');
-
 Route::get('determine-profile-route', 'ProfileController@determineProfileRoute')->name('determine-profile-route');
-
 Route::resource('profile', 'ProfileController');
 
 // Registration routes
-
 Route::get('register', 'Auth\AuthController@showRegistrationForm')->name('register');
 Route::post('register', 'Auth\AuthController@register');
 
 // Username route
-
 Route::get('/username', 'UsernameController@show')->middleware('auth');
 
 // Settings routes
-
 Route::get('settings', 'SettingsController@edit');
-
 Route::post('settings', 'SettingsController@update')->name('user-update');
 
 // Socialite routes
-
 Route::get('auth/{provider}', 'Auth\AuthController@redirectToProvider');
-
 Route::get('auth/{provider}/callback', 'Auth\AuthController@handleProviderCallback');
 
 // Terms route
-
 Route::get('/terms', 'PagesController@terms')->name('terms');
 
 // User routes
-
 Route::resource('user', 'UserController');
 
 
 // Widget routes
-
 Route::get('widget/create',  'WidgetController@create')->name('widget.create');
-
 Route::get('widget/{widget}-{slug?}', 'WidgetController@show')->name('widget.show');
-
 Route::resource('widget', 'WidgetController', ['except' => ['show', 'create']]);
 
 

@@ -24,15 +24,10 @@
 
                 </div>
 
-                <h1>
-                    Free Template
-                    <small>For Laravel 5.4</small>
-                </h1>
-
                 <ol class="breadcrumb">
                     <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
                     <li><a href="#">Landing</a></li>
-                    <li class="active">Site Landing Page</li>
+                    <li class="active">Investor Landing Page</li>
                 </ol>
 
             </section>
@@ -46,31 +41,6 @@
                 @include('admin.components.admin-v1.map')
 
                 <!-- box -->
-
-                <div class="box box-default">
-
-                    <!-- box-header -->
-
-                    <div class="box-header with-border">
-
-                        <h1>Admin Dash Helps You Get Started</h1>
-
-                    </div>
-
-                    <!-- end box-header -->
-
-                    <!-- box-body -->
-
-                    <div class="box-body">
-
-                        Let's make something great...
-
-                    </div>
-
-                    <!--  end box-body -->
-
-                </div>
-
                 <!-- end box -->
 
             </section>
@@ -140,38 +110,26 @@
                 }
             },
             markers: [
-                {latLng: [41.50, -87.37], name: 'Chicago'},
-                {latLng: [-34.60, -58.38], name: 'Buenos Aires'},
-                {latLng: [32.46, -96.46], name: 'Dallas'},
-                {latLng: [36.10, -115.12], name: 'Las Vegas'},
-                {latLng: [34.3, -118.15], name: 'Los Angeles'},
-                {latLng: [40.43, -74.00], name: 'New York City'},
-                {latLng: [41.90, 12.45], name: 'Vatican City'},
-                {latLng: [43.73, 7.41], name: 'Monaco'},
-                {latLng: [-0.52, 166.93], name: 'Nauru'},
-                {latLng: [-8.51, 179.21], name: 'Tuvalu'},
-                {latLng: [43.93, 12.46], name: 'San Marino'},
-                {latLng: [47.14, 9.52], name: 'Liechtenstein'},
-                {latLng: [7.11, 171.06], name: 'Marshall Islands'},
-                {latLng: [17.3, -62.73], name: 'Saint Kitts and Nevis'},
-                {latLng: [3.2, 73.22], name: 'Maldives'},
-                {latLng: [35.88, 14.5], name: 'Malta'},
-                {latLng: [12.05, -61.75], name: 'Grenada'},
-                {latLng: [13.16, -61.23], name: 'Saint Vincent and the Grenadines'},
-                {latLng: [13.16, -59.55], name: 'Barbados'},
-                {latLng: [17.11, -61.85], name: 'Antigua and Barbuda'},
-                {latLng: [-4.61, 55.45], name: 'Seychelles'},
-                {latLng: [7.35, 134.46], name: 'Palau'},
-                {latLng: [42.5, 1.51], name: 'Andorra'},
-                {latLng: [14.01, -60.98], name: 'Saint Lucia'},
-                {latLng: [6.91, 158.18], name: 'Federated States of Micronesia'},
-                {latLng: [1.3, 103.8], name: 'Singapore'},
-                {latLng: [1.46, 173.03], name: 'Kiribati'},
-                {latLng: [-21.13, -175.2], name: 'Tonga'},
-                {latLng: [15.3, -61.38], name: 'Dominica'},
-                {latLng: [-20.2, 57.5], name: 'Mauritius'},
-                {latLng: [26.02, 50.55], name: 'Bahrain'},
-                {latLng: [0.33, 6.73], name: 'São Tomé and Príncipe'}
+                {latLng: [40.43, -74.00], name: 'New York Stock Exchange'},
+                {latLng: [51.50, -0.1278], name: 'London Stock Exchange Group'},
+                {latLng: [35.6895, 139.6917], name: 'Tokio - Japan Exchange Group'},
+                {latLng: [31.2304, 121.4737], name: 'Shanghai Stock Exchange'},
+                {latLng: [22.3964, 114.1095], name: 'Hong Kong Stock Exchange'},
+                {latLng: [50.8503, 4.3517], name: 'Brussels - Euronext'},
+                {latLng: [22.5431, 114.0579], name: 'Shenzhen Stock Exchange'},
+                {latLng: [43.6532, -79.3832], name: 'Toronto - TMX Group'},
+                {latLng: [50.1109, 8.6821], name: 'Frankfurt - Deutsche Börse'},
+                {latLng: [19.0760, 72.8777], name: 'Bombay Stock Exchange'},
+                {latLng: [19.0760, 72.8777], name: 'Mumbai - National Stock Exchange of India'},
+                {latLng: [47.3769, 8.5417], name: 'Zurich - SIX Swiss Exchange'},
+                {latLng: [-33.8688, 151.2093], name: 'Sydney - Australian Securities Exchange'},
+                {latLng: [37.5665, 126.9780], name: 'Seoul - Korea Exchange'},
+                {latLng: [59.3293, 18.0686], name: 'Stockholm - OMX Nordic Exchange'},
+                {latLng: [-26.2041, 28.0473], name: 'Johannesburg - JSE Limited'},
+                {latLng: [40.4168, 3.7038], name: 'Madrid - BME Spanish Exchanges'},
+                {latLng: [25.0330, 121.5654], name: 'Taipei - Taiwan Stock Exchange'},
+                {latLng: [-23.5505, -46.6333], name: 'São Paulo - BM&F Bovespa'},
+                {latLng: [40.80, -74.50], name: 'New York - NASDAQ'},
             ]
         });
 

@@ -1,7 +1,7 @@
 <!-- MAP & BOX PANE -->
 <div class="box box-success">
     <div class="box-header with-border">
-        <h3 class="box-title">Visitors Report</h3>
+        <h3 class="box-title">Track your trades on all exchanges</h3>
 
         <div class="box-tools pull-right">
             <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -23,20 +23,20 @@
                 <div class="pad box-pane-right bg-green" style="min-height: 280px">
                     <div class="description-block margin-bottom">
                         <div class="sparkbar pad" data-color="#fff">90,70,90,70,75,80,70</div>
-                        <h5 class="description-header">8390</h5>
+                        <h5 class="description-header">839044</h5>
                         <span class="description-text">Visits</span>
                     </div>
                     <!-- /.description-block -->
                     <div class="description-block margin-bottom">
                         <div class="sparkbar pad" data-color="#fff">90,50,90,70,61,83,63</div>
-                        <h5 class="description-header">30%</h5>
-                        <span class="description-text">Referrals</span>
+                        <h5 class="description-header">60%</h5>
+                        <span class="description-text">more trades since 2016</span>
                     </div>
                     <!-- /.description-block -->
                     <div class="description-block">
                         <div class="sparkbar pad" data-color="#fff">90,50,90,70,61,83,63</div>
-                        <h5 class="description-header">70%</h5>
-                        <span class="description-text">Organic</span>
+                        <h5 class="description-header">99%</h5>
+                        <span class="description-text">satisfied customers</span>
                     </div>
                     <!-- /.description-block -->
                 </div>

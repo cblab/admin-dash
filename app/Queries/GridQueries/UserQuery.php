@@ -4,8 +4,9 @@ namespace App\Queries\GridQueries;
 
 use DB;
 use App\Queries\GridQueries\Contracts\DataQuery;
+use App\Queries\GridQueries\Contracts\FilteredDataQuery;
 
-class UserQuery implements DataQuery
+class UserQuery implements DataQuery, FilteredDataQuery
 {
     public function data($column, $direction)
     {
@@ -34,6 +35,7 @@ class UserQuery implements DataQuery
                 ->paginate(10);
 
         return $rows;
-
     }
+
+
 }
