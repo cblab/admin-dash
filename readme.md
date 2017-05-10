@@ -1,8 +1,8 @@
 # Admin-Dash For Laravel 5.4
+
+This investor dash test application is based on Admin-Dash For Laravel 5.4. 
+
 ## Installation
-
-Follow [the basic instructions](https://help.github.com/articles/fork-a-repo/) for forking a repo from Github.
-
 You will have to create your own .env file for laravel.  You can get an example of a .env from the [master](https://github.com/laravel/laravel/blob/master/.env.example):
 
 ~~~~
