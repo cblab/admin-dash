@@ -56,8 +56,8 @@ class OrderController extends Controller
             'stock_id' => $request->get('stock_id'),
             'user_id' => Auth::user()->id,
             'exchange_id' => $request->get('exchange_id'),
-            'prefered_stock' => ($request->get('stock_type') == 0) ? 1 : 0,
-            'common_stock' => ($request->get('stock_type') == 1) ? 1 : 0,
+            'common_stock' => ($request->get('stock_type') == 0) ? 1 : 0,
+            'prefered_stock' => ($request->get('stock_type') == 1) ? 1 : 0,
             'price' => $request->get('price')
         ]);
 

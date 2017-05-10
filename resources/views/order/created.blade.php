@@ -2,7 +2,7 @@
 
 @section('title')
 
-    <title>Created a new Stock</title>
+    <title>Created a new Order</title>
 
 @endsection
 
@@ -23,7 +23,7 @@
                 <ol class="breadcrumb">
 
                     <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-                    <li class="active">Newly Created Stock</li>
+                    <li class="active">Newly Created Order</li>
 
                 </ol>
 
@@ -36,7 +36,7 @@
             <section class="content">
 
                 <div class="col-xs-4">
-                    <h2 class="min-width-200">You just created a new stock successfully: ({{$stock->isin}})</h2>
+                    <h2 class="min-width-200">You just created a new trade/order successfully: ({{$order->stock()->isin}})</h2>
                 </div>
 
             </section>
