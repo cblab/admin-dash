@@ -42,8 +42,8 @@ class StockController extends Controller
     {
         $this->validate($request, [
                 'company_id' => 'required|numeric',
-                'wkn' => 'required|alpha_num|max:10',
-                'isin' => 'required|alpha_num|max:12',
+                'wkn' => 'required|max:10',
+                'isin' => 'required|max:12',
             ]
         );
 

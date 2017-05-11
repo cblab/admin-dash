@@ -35,8 +35,7 @@ class CompanyController extends Controller
     public function create(Request $request)
     {
         $this->validate($request, [
-                'name' => 'required|alpha_num|max:128',
-                'symbol' => 'required|alpha_num|max:6',
+                'name' => 'required|max:128'
             ]
         );
 
