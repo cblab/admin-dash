@@ -106,6 +106,23 @@ Route::delete('/order/delete/{id}', [
     'as'         => 'order.delete'
 ]);
 
+Route::get('/choose-exchange', [
+    'middleware' => 'auth',
+    'uses'       => 'OrderController@chooseExchange',
+    'as'         => 'order-table.choose-exchange'
+]);
+
+Route::post('/list-orders-by-exchange', [
+    'middleware' => 'auth',
+    'uses'       => 'OrderController@listOrdersByExchange',
+    'as'         => 'order-table.report'
+]);
+
+
+
+
+
+
 // Admin route
 Route::get('/admin', 'AdminController@index')->name('admin');
 Route::get('/admin-v2', 'AdminController@adminV2');

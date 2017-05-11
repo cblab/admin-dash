@@ -66,4 +66,38 @@ class OrderController extends Controller
         return view('order.created')
             ->with('order', $order);
     }
+
+    /**
+     * Show form to choose an exchange for reporting.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function chooseExchange() {
+        $exchanges = StockExchange::all();
+
+        return view('order-table.choose-exchange')
+            ->with('exchanges', $exchanges);
+    }
+
+    /**
+     * List orders by exchange
+     *
+     * @param \Illuminate\Http\Request $request
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function listOrdersByExchange(Request $request) {
+        $exchange_id = $request->get('exchange_id');
+
+        $exchange_name = (StockExchange::where('id', $exchange_id)->first())->ex_name;
+        $orders = ExchangeStock::where('exchange_id', $exchange_id)
+            ->where('user_id', Auth::user()->id)
+            ->orderBy('created_at', 'desc')
+            ->get();
+
+        return view('order-table.report')
+            ->with('orders', $orders)
+            ->with('exchange_name', $exchange_name);
+    }
+
 }

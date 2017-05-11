@@ -41,6 +41,7 @@
             <li><a href="/create-company"><i class="fa fa-dashboard"></i><span>Create Company Profile</span></a></li>
             <li><a href="/create-stock"><i class="fa fa-dashboard"></i><span>Add Company Stock</span></a></li>
             <li><a href="/create-order"><i class="fa fa-dashboard"></i><span>Manage orders/trades</span></a></li>
+            <li><a href="/choose-exchange"><i class="fa fa-dashboard"></i><span>List orders by exchange</span></a></li>
             <li><a href="/determine-profile-route"><i class="fa fa-user"></i> <span>Profile</span></a></li>
             <li><a href="/settings"><i class="fa fa-wrench"></i> <span>Account Settings</span></a></li>
         </ul>
