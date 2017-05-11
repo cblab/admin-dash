@@ -36,7 +36,7 @@
             <section class="content">
 
                 <div class="col-xs-4">
-                    <h2 class="min-width-200">You just created a new trade/order successfully: ({{$order->stock()->isin}})</h2>
+                    <h2 class="min-width-200">You just created a new trade/order successfully: ({{$order->stock()->first()->isin}})</h2>
                 </div>
 
             </section>
